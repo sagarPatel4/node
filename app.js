@@ -1,6 +1,6 @@
 module.exports = {
     a: 1,
-    c: function () {
+    c: function() {
         return "i m funcation "
     }
 }

@@ -1,7 +1,8 @@
 
 const app=require("./app")
 
-console.log("hiiii"+app.c);
+const ab =app.c
+console.log(ab);
 
 
 const arr=[1,2,3,4,5,6,7,8,9]
