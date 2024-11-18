@@ -12,23 +12,23 @@ console.log("sdfsdfsfg");
 
 
 //create api using express
-const express = require("express")
-const app = express()
+// const express = require("express")
+// const app = express()
 
-const data=require("./data.js")
+// const data=require("./data.js")
 
-app.get('/home', (req, res)=> {
-    console.log(req.query.name);
+// app.get('/home', (req, res)=> {
+//     console.log(req.query.name);
 
-    res.send(data)
-})
+//     res.send(data)
+// })
 
-app.get('/about', (req, res)=> {
-    res.send(`<input type="text" placeholder="user name" value="${req.query.name}"/>
-        <button>Click Me</button> `)
-})
+// app.get('/about', (req, res)=> {
+//     res.send(`<input type="text" placeholder="user name" value="${req.query.name}"/>
+//         <button>Click Me</button> `)
+// })
 
-app.listen(500)
+// app.listen(500)
 
 
 
