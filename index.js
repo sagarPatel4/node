@@ -104,3 +104,27 @@ console.log("sdfsdfsfg");
 
 // app.use('/', router) // add router in app
 // app.listen(550)
+
+// create event and eventemitter
+
+const express=require('express')
+const EventEmitter=require('events')
+const app=express()
+const event =new EventEmitter()
+
+var count=0
+
+// event callback
+event.on('countApi',()=>{
+    count++
+    console.log('event Called  ', count)
+})
+
+app.get('/',(req,res)=>{
+    res.send('api called')
+
+    // event trigerde
+    event.emit('countApi')
+})
+
+app.listen(550)
