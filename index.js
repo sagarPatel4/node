@@ -31,7 +31,37 @@ console.log("sdfsdfsfg");
 // app.listen(500)
 
 
-const express=require('express')
+// load htm page using express
+// const express=require('express')
+// const path=require('path')
+
+// const app=express()
+// const publicPath=path.join(__dirname,'public')
+
+// app.use(express.static(publicPath))
+
+// app.listen(500)
 
 
+// // remove extension from url using sendfile
+// const express = require('express')
+// const path = require('path')
 
+// const app = express()
+// const publicPath=path.join(__dirname,'public')
+
+// app.use(express.static(publicPath))
+
+// app.get('',(req,res)=>{
+//     res.sendFile(`${publicPath}/index.html`)
+// })
+
+// app.get('/home',(req,res)=>{
+//     res.sendFile(`${publicPath}/home.html`)
+// })
+
+// // show 404 error 
+// app.get('*',(req,res)=>{
+//     res.sendFile(`${publicPath}/noPage.html`)
+// })
+// app.listen(500)
